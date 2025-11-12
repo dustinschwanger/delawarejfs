@@ -107,13 +107,18 @@ p a {
 
 /* Icon buttons */
 .chat-widget__close-button,
-.chat-widget__send-button,
-.site-header__mobile-toggle {
+.chat-widget__send-button {
   min-width: 44px;
   min-height: 44px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Mobile menu toggle - size only, display controlled by media query in styles.css */
+.site-header__mobile-toggle {
+  min-width: 44px;
+  min-height: 44px;
 }
 
 /* Mobile menu toggle spans */
