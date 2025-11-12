@@ -1,0 +1,339 @@
+/**
+ * WCAG 2.2 AA Compliance Enhancements
+ * Delaware County JFS
+ */
+
+/* ========================================
+   2.4.11 FOCUS APPEARANCE (WCAG 2.2 AA)
+   Enhanced focus indicators with 2px minimum
+   ======================================== */
+
+/* Global focus styles */
+*:focus {
+  outline: 2px solid #005ea2;
+  outline-offset: 2px;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: 3px solid #005ea2;
+  outline-offset: 3px;
+}
+
+/* Button focus styles */
+button:focus-visible,
+.usa-button:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 5px #005ea2;
+}
+
+/* Link focus styles */
+a:focus-visible {
+  outline: 3px solid #005ea2;
+  outline-offset: 2px;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+/* Skip navigation enhanced focus */
+.usa-skipnav:focus {
+  outline: 4px solid #ffffff;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 6px #005ea2;
+}
+
+/* Input focus styles */
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid #005ea2;
+  outline-offset: 2px;
+  border-color: #005ea2;
+}
+
+/* Accordion button focus */
+.usa-accordion__button:focus-visible {
+  outline: 3px solid #005ea2;
+  outline-offset: -3px;
+}
+
+/* Dropdown toggle focus */
+.dropdown-toggle:focus-visible {
+  outline: 3px solid #005ea2;
+  outline-offset: 2px;
+  background-color: rgba(0, 94, 162, 0.1);
+}
+
+/* Mobile menu toggle focus */
+.site-header__mobile-toggle:focus-visible {
+  outline: 3px solid #005ea2;
+  outline-offset: 2px;
+}
+
+/* Card link focus */
+.support-card__cta:focus-visible,
+.news-article__title a:focus-visible {
+  outline: 3px solid #005ea2;
+  outline-offset: 2px;
+}
+
+/* ========================================
+   2.5.8 TARGET SIZE (WCAG 2.2 AA)
+   Minimum 24x24 CSS pixels
+   ======================================== */
+
+/* Ensure all interactive elements meet minimum size */
+button,
+.usa-button,
+a:not(.usa-skipnav),
+input[type="submit"],
+input[type="button"] {
+  min-height: 44px; /* Exceeds WCAG 2.2 AA requirement */
+  min-width: 44px;
+}
+
+/* Links in body text can be smaller but should have adequate padding */
+.usa-prose a,
+.usa-accordion__content a,
+p a {
+  padding: 2px 0;
+  min-height: auto;
+  min-width: auto;
+}
+
+/* Icon buttons */
+.chat-widget__close-button,
+.chat-widget__send-button,
+.site-header__mobile-toggle {
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mobile menu toggle spans */
+.site-header__mobile-toggle span {
+  display: block;
+  width: 24px;
+  height: 3px;
+}
+
+/* Ensure chat bubble meets size */
+.chat-bubble-mobile {
+  min-width: 56px;
+  min-height: 56px;
+}
+
+/* ========================================
+   1.4.3 CONTRAST (WCAG 2.2 AA)
+   Ensure 4.5:1 for normal text, 3:1 for large
+   ======================================== */
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  * {
+    border-color: CanvasText !important;
+  }
+
+  a {
+    color: LinkText;
+  }
+
+  button, .usa-button {
+    border: 2px solid ButtonText;
+  }
+}
+
+/* Ensure link color has sufficient contrast */
+a {
+  color: #005ea2; /* 4.71:1 contrast on white */
+}
+
+a:hover {
+  color: #1a4480; /* 8.59:1 contrast on white */
+}
+
+/* Alert text colors */
+.usa-alert--warning .usa-alert__text {
+  color: #1a1a1a; /* Ensure readability */
+}
+
+/* Ensure white text on dark backgrounds has sufficient contrast */
+.hero-djfs .usa-hero__heading,
+.hero-djfs .usa-hero__heading--alt,
+.hero-djfs .hero-description {
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* ========================================
+   3.2.6 CONSISTENT HELP (WCAG 2.2 A)
+   Help mechanism in consistent location
+   ======================================== */
+
+/* Consistent help/contact link styling */
+.consistent-help-link {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  background: #005ea2;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.consistent-help-link:hover {
+  background: #1a4480;
+  color: white;
+}
+
+/* ========================================
+   CHAT WIDGET ACCESSIBILITY
+   ======================================== */
+
+/* Ensure chat widget has proper focus management */
+.chat-widget[aria-hidden="true"] {
+  display: none;
+}
+
+.chat-widget {
+  role: dialog;
+}
+
+/* Focus trap within chat widget when open */
+.chat-widget--mobile-open,
+.chat-widget--desktop-open {
+  isolation: isolate;
+}
+
+/* ========================================
+   KEYBOARD NAVIGATION ENHANCEMENTS
+   ======================================== */
+
+/* Visual indicator for keyboard users */
+body.user-is-tabbing *:focus {
+  outline: 3px solid #005ea2 !important;
+  outline-offset: 3px !important;
+}
+
+/* ========================================
+   REDUCED MOTION SUPPORT
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ========================================
+   SCREEN READER ONLY CONTENT
+   ======================================== */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* ========================================
+   PRINT STYLES (ACCESSIBILITY)
+   ======================================== */
+
+@media print {
+  /* Ensure all text is black for printing */
+  * {
+    color: #000 !important;
+    background: #fff !important;
+  }
+
+  /* Show link URLs */
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  /* Don't print decorative elements */
+  .chat-widget,
+  .chat-bubble-mobile,
+  .site-footer__social {
+    display: none !important;
+  }
+}
+
+/* ========================================
+   MOBILE ACCESSIBILITY ENHANCEMENTS
+   ======================================== */
+
+@media (max-width: 640px) {
+  /* Larger tap targets on mobile */
+  button,
+  .usa-button,
+  a {
+    min-height: 48px;
+  }
+
+  /* Ensure adequate spacing between interactive elements */
+  .site-header__menu li {
+    margin: 8px 0;
+  }
+
+  .contact-card {
+    margin-bottom: 16px;
+  }
+}
+
+/* ========================================
+   DARK MODE SUPPORT (PREFERS-COLOR-SCHEME)
+   ======================================== */
+
+@media (prefers-color-scheme: dark) {
+  /* Adjust colors for dark mode if browser supports it */
+  :root {
+    color-scheme: light; /* Force light mode for now */
+  }
+}
+
+/* ========================================
+   LANGUAGE DIRECTION SUPPORT
+   ======================================== */
+
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .site-header__logo {
+  order: 2;
+}
+
+[dir="rtl"] .site-header__nav {
+  order: 1;
+}

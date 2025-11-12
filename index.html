@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Delaware County Department of Job and Family Services provides a holistic approach to assist families with public assistance, child and adult protective services, foster care, adoption, and workforce development.">
+  <meta name="theme-color" content="#0a1d2f">
+  <title>Delaware County Department of Job & Family Services</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon_1.ico">
+
+  <!-- USWDS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.7.1/dist/css/uswds.min.css">
+
+  <!-- Font Awesome for better icon support -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css?v=18">
+
+  <!-- WCAG 2.2 AA Compliance Enhancements -->
+  <link rel="stylesheet" href="accessibility.css?v=1">
+
+  <!-- Logo Fix for Delaware -->
+  <style>
+    .site-header__logo img {
+      height: auto !important;
+      max-height: 80px;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+    }
+
+    @media (max-width: 640px) {
+      .site-header__logo img {
+        max-height: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Skip Navigation Link for Accessibility -->
+  <a href="#main-content" class="usa-skipnav">Skip to main content</a>
+
+  <!-- Facebook SDK -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"></script>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="grid-container">
+      <div class="site-header__inner">
+        <div class="site-header__logo">
+          <a href="/" aria-label="Delaware County Department of Job & Family Services - Home" aria-current="page">
+            <img src="logo.png" alt="Delaware County Department of Job & Family Services">
+          </a>
+        </div>
+
+        <button class="site-header__mobile-toggle" id="mobileMenuToggle" aria-expanded="false" aria-label="Toggle navigation menu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+
+        <nav class="site-header__nav" id="mainNav" aria-label="Primary navigation">
+          <ul class="site-header__menu">
+            <li class="has-dropdown">
+              <a href="/public-assistance" class="dropdown-toggle" aria-expanded="false">Public Assistance</a>
+              <ul class="dropdown-menu">
+                <li><a href="/cash-assistance">Cash Assistance (Ohio Works First)</a></li>
+                <li><a href="/snap-food-assistance">Food Assistance (SNAP)</a></li>
+                <li><a href="/medicaid">Medicaid</a></li>
+                <li><a href="/child-care-assistance">Child Care Assistance</a></li>
+                <li><a href="/prevention-retention-contingency">Prevention, Retention & Contingency (PRC)</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="/workforce-services" class="dropdown-toggle" aria-expanded="false">Workforce Services</a>
+              <ul class="dropdown-menu">
+                <li><a href="/ohiomeansjobs">OhioMeansJobs Delaware County</a></li>
+                <li><a href="/wioa">WIOA Programs</a></li>
+                <li><a href="/youth-services">Youth Services</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="/child-adult-protective-services" class="dropdown-toggle" aria-expanded="false">Child & Adult Protective Services</a>
+              <ul class="dropdown-menu">
+                <li><a href="/child-protection">Child Protection Services</a></li>
+                <li><a href="/adult-protection">Adult Protective Services</a></li>
+                <li><a href="/foster-adopt">Foster Care & Adoption</a></li>
+                <li><a href="/fcfc">Family & Children First Council</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="/about" class="dropdown-toggle" aria-expanded="false">About Us</a>
+              <ul class="dropdown-menu">
+                <li><a href="/about">About the Department</a></li>
+                <li><a href="/leadership">Leadership Team</a></li>
+                <li><a href="/jobs">Job Openings</a></li>
+              </ul>
+            </li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section class="usa-hero hero-djfs" aria-label="Introduction">
+      <div class="grid-container">
+        <div class="hero-content-wrapper">
+          <div class="usa-hero__callout">
+            <p class="usa-hero__heading--alt">Committed To Helping Delaware County</p>
+            <h1 class="usa-hero__heading">
+              Support For Families, Children, And Your Path To Self-Sufficiency.
+            </h1>
+            <p class="hero-description">
+              Delaware County Job and Family Services provides a holistic approach to assist families and individuals facing challenges with living expenses, healthcare, family support, job skills, and employment. We offer public assistance, protective services, foster care, adoption, and comprehensive workforce development programs.
+            </p>
+            <div class="hero-actions">
+              <a class="usa-button usa-button--big" href="https://benefits.ohio.gov" target="_blank" rel="noopener noreferrer">Apply for Benefits</a>
+              <a class="usa-button usa-button--outline usa-button--inverse usa-button--big" href="tel:740-833-2300">
+                <i class="fas fa-phone" aria-hidden="true"></i>
+                Call 740-833-2300
+              </a>
+            </div>
+          </div>
+
+          <!-- Chat Widget UI -->
+          <div class="chat-widget" id="chatWidget" role="dialog" aria-label="Live chat support" aria-modal="false" aria-hidden="true">
+            <div class="chat-widget__header">
+              <div class="chat-widget__header-content">
+                <i class="fas fa-comments chat-widget__header-icon" aria-hidden="true"></i>
+                <div class="chat-widget__header-text">
+                  <p class="chat-widget__title">Ask Us Anything</p>
+                  <p class="chat-widget__subtitle">Get instant help</p>
+                </div>
+              </div>
+              <div class="chat-widget__header-actions">
+                <div class="chat-widget__status">
+                  <span class="chat-widget__status-dot"></span>
+                  <span class="chat-widget__status-text">Online</span>
+                </div>
+                <button class="chat-widget__close-button" id="closeChatButton" aria-label="Close chat" type="button">
+                  <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="chat-widget__messages" role="log" aria-live="polite" aria-atomic="false">
+              <div class="chat-message chat-message--bot">
+                <div class="chat-message__avatar">
+                  <i class="fas fa-user-tie" aria-hidden="true"></i>
+                </div>
+                <div class="chat-message__content">
+                  <div class="chat-message__bubble">
+                    Hello! How can I help you today? I can answer questions about our services, applications, and more.
+                  </div>
+                  <div class="chat-message__time">Just now</div>
+                </div>
+              </div>
+
+              <div class="chat-message chat-message--user">
+                <div class="chat-message__content">
+                  <div class="chat-message__bubble">
+                    How do I apply for food assistance?
+                  </div>
+                  <div class="chat-message__time">Just now</div>
+                </div>
+              </div>
+
+              <div class="chat-message chat-message--bot">
+                <div class="chat-message__avatar">
+                  <i class="fas fa-user-tie" aria-hidden="true"></i>
+                </div>
+                <div class="chat-message__content">
+                  <div class="chat-message__bubble">
+                    You can apply for food assistance online at benefits.ohio.gov or by calling 740-833-2300. Would you like me to guide you through the process?
+                  </div>
+                  <div class="chat-message__time">Just now</div>
+                </div>
+              </div>
+
+              <div class="chat-widget__typing" aria-label="Agent is typing">
+                <div class="chat-typing-indicator">
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="chat-widget__input">
+              <label for="chat-input-field" class="sr-only">Type your message</label>
+              <input type="text" id="chat-input-field" name="chat-message" class="chat-widget__input-field" placeholder="Type your question..." aria-label="Chat message input" autocomplete="off" aria-describedby="chat-help-text">
+              <span id="chat-help-text" class="sr-only">Type your question and press enter or click send to submit</span>
+              <button class="chat-widget__send-button" aria-label="Send message" type="button">
+                <i class="fas fa-paper-plane" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Chat Bubble -->
+      <button class="chat-bubble-mobile" id="openChatButton" aria-label="Open chat - 1 unread message" type="button">
+        <i class="fas fa-comments" aria-hidden="true"></i>
+        <span class="chat-bubble-mobile__badge" aria-hidden="true">1</span>
+      </button>
+    </section>
+
+    <!-- JavaScript for Chat Functionality -->
+    <script>
+      (function() {
+        const chatWidget = document.getElementById('chatWidget');
+        const openChatButton = document.getElementById('openChatButton');
+        const closeChatButton = document.getElementById('closeChatButton');
+
+        function isMobile() {
+          return window.innerWidth <= 640;
+        }
+
+        // Open chat when clicking bubble
+        if (openChatButton) {
+          openChatButton.addEventListener('click', function() {
+            if (isMobile()) {
+              chatWidget.classList.add('chat-widget--mobile-open');
+              document.body.style.overflow = 'hidden'; // Prevent body scroll on mobile
+            } else {
+              chatWidget.classList.add('chat-widget--desktop-open');
+            }
+            openChatButton.style.display = 'none';
+          });
+        }
+
+        // Close chat when clicking close button
+        if (closeChatButton) {
+          closeChatButton.addEventListener('click', function() {
+            chatWidget.classList.remove('chat-widget--mobile-open');
+            chatWidget.classList.remove('chat-widget--desktop-open');
+            if (openChatButton) {
+              openChatButton.style.display = 'flex';
+            }
+            document.body.style.overflow = ''; // Restore body scroll
+          });
+        }
+
+        // Handle window resize - reset chat state
+        let resizeTimer;
+        window.addEventListener('resize', function() {
+          clearTimeout(resizeTimer);
+          resizeTimer = setTimeout(function() {
+            // Close chat on resize to avoid layout issues
+            const wasMobileOpen = chatWidget.classList.contains('chat-widget--mobile-open');
+            const wasDesktopOpen = chatWidget.classList.contains('chat-widget--desktop-open');
+
+            if (wasMobileOpen || wasDesktopOpen) {
+              chatWidget.classList.remove('chat-widget--mobile-open');
+              chatWidget.classList.remove('chat-widget--desktop-open');
+              if (openChatButton) {
+                openChatButton.style.display = 'flex';
+              }
+              document.body.style.overflow = '';
+            }
+          }, 250);
+        });
+      })();
+    </script>
+
+    <!-- Report Fraud Alert -->
+    <section class="fraud-alert-section" aria-labelledby="fraud-alert-heading">
+      <div class="grid-container">
+        <div class="usa-alert usa-alert--warning usa-alert--slim">
+          <div class="usa-alert__body">
+            <h2 class="usa-alert__heading" id="fraud-alert-heading">Report Fraud</h2>
+            <p class="usa-alert__text">
+              The Ohio Department of Job and Family Services is committed to investigating allegations of fraud. If you suspect fraud may be occurring,
+              <a href="#fraud" class="usa-link">click here to report</a> or call <strong>740-833-2300</strong> and ask for the Fraud Department. You may remain anonymous.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Access Section -->
+    <section class="quick-access-section" aria-labelledby="quick-access-heading">
+      <div class="grid-container">
+        <h2 class="section-heading" id="quick-access-heading">I Need Help With...</h2>
+        <ul class="usa-accordion usa-accordion--bordered quick-access-list">
+          <li>
+            <button class="usa-accordion__button" aria-expanded="false" aria-controls="workforce-services">
+              Workforce & Employment Services
+            </button>
+            <div id="workforce-services" class="usa-accordion__content usa-prose">
+              <h3>Workforce & Employment Services</h3>
+
+              <h4>OhioMeansJobs Delaware County</h4>
+              <p><strong>Mission:</strong> Connect employers with qualified employees and empower our county's workforce.</p>
+              <p><strong>Location:</strong> 145 North Union Street, Delaware, OH 43015</p>
+              <p><strong>Phone:</strong> <a href="tel:740-833-2338">740-833-2338</a></p>
+              <p><strong>Email:</strong> <a href="mailto:omjdelaware@jfs.ohio.gov">omjdelaware@jfs.ohio.gov</a></p>
+
+              <h4>Services for Job Seekers</h4>
+              <ul>
+                <li>Resume and job search assistance</li>
+                <li>WIOA orientation programs</li>
+                <li>Career counseling and exploration</li>
+                <li>Skills training and development</li>
+                <li>R.E.A.C.H. Workshop offerings</li>
+              </ul>
+
+              <h4>Services for Employers</h4>
+              <ul>
+                <li>Hiring and training support</li>
+                <li>Incumbent worker training programs</li>
+                <li>On-the-job training initiatives</li>
+                <li>Labor market information</li>
+              </ul>
+
+              <h4>Youth Services (Ages 14-24)</h4>
+              <p>Comprehensive Case Management and Employment Program (CCMEP)</p>
+              <ul>
+                <li>Job coaching and career exploration</li>
+                <li>Financial literacy instruction</li>
+                <li>GED preparation</li>
+                <li>Work experience opportunities</li>
+                <li>Financial incentives for milestones</li>
+              </ul>
+
+              <h4>Online Resources</h4>
+              <ul>
+                <li><strong>Job Search:</strong> <a href="https://www.ohiomeansjobs.com" target="_blank" rel="noopener noreferrer">OhioMeansJobs.com</a></li>
+                <li><strong>Apply for WIOA:</strong> Contact 740-833-2338 for eligibility</li>
+              </ul>
+
+              <a href="/workforce-services" class="usa-button">Learn More</a>
+            </div>
+          </li>
+          <li>
+            <button class="usa-accordion__button" aria-expanded="false" aria-controls="public-assistance-services">
+              Public Assistance Services
+            </button>
+            <div id="public-assistance-services" class="usa-accordion__content usa-prose">
+              <h3>Public Assistance Services</h3>
+
+              <h4>To Apply for SNAP, Ohio Works First and/or Medicaid</h4>
+              <p><strong>Online Application:</strong> <a href="https://benefits.ohio.gov" target="_blank" rel="noopener noreferrer">benefits.ohio.gov</a></p>
+              <p>Application is submitted online. Interviews or further contact will be by telephone and/or mail.</p>
+
+              <h4>To Apply for Medicaid</h4>
+              <p><strong>Call:</strong> <a href="tel:1-844-640-6446">1-844-640-6446</a></p>
+              <p><strong>Hours:</strong> Monday–Friday, 8:00 AM – 4:00 PM</p>
+              <p><strong>Special Note:</strong> Medicaid applications are accepted 8:00 AM – 11:00 AM</p>
+
+              <h4>Paper Application</h4>
+              <p><strong>To receive a paper application for SNAP/Ohio Works First and/or Medicaid:</strong></p>
+              <ul>
+                <li>Call: <a href="tel:740-833-2300">740-833-2300</a></li>
+                <li>Toll Free: <a href="tel:1-800-899-3180">1-800-899-3180</a></li>
+              </ul>
+
+              <p><strong>Mail completed application to:</strong></p>
+              <address>
+                Delaware County Job and Family Services<br>
+                145 North Union Street, 2nd Floor<br>
+                Delaware, Ohio 43015
+              </address>
+
+              <h4>Submit Required Documents</h4>
+              <p>Required documents may be:</p>
+              <ul>
+                <li><strong>Mailed</strong> to the agency address above</li>
+                <li><strong>Faxed</strong> to 740-833-2302</li>
+                <li><strong>Emailed</strong> to <a href="mailto:delawarecounty@jfs.ohio.gov">delawarecounty@jfs.ohio.gov</a></li>
+              </ul>
+
+              <div class="usa-alert usa-alert--info usa-alert--slim">
+                <div class="usa-alert__body">
+                  <p class="usa-alert__text">
+                    <strong>Note:</strong> No in-person interviews are required to apply for or receive benefits. Some interviews may be required for specific programs.
+                  </p>
+                </div>
+              </div>
+
+              <h4>EBT Card & Benefits Access</h4>
+              <ul>
+                <li><strong>ConnectEBT Mobile App:</strong> Check balances, review history, manage your card</li>
+                <li><strong>One Direction Card:</strong> Access your SNAP benefits</li>
+                <li><strong>Customer Service:</strong> <a href="tel:1-844-640-6446">1-844-640-6446</a></li>
+              </ul>
+
+              <h4>Prevention, Retention & Contingency (PRC)</h4>
+              <p>Help with barriers to self-sufficiency including housing assistance, vehicle repair, utilities, and employment support.</p>
+              <p><strong>Income Requirement:</strong> Below 200% of Federal Poverty Line</p>
+              <p><strong>Apply:</strong> Call <a href="tel:740-833-2338">740-833-2338</a> or email <a href="mailto:Delaware_prc@jfs.ohio.gov">Delaware_prc@jfs.ohio.gov</a></p>
+
+              <h4>Report Fraud or Overpayment Issues</h4>
+              <p>Contact the agency at <a href="tel:740-833-2300">740-833-2300</a> and ask for the Fraud Department to report benefits fraud or discuss overpayment issues.</p>
+
+              <a href="/public-assistance" class="usa-button">Learn More</a>
+            </div>
+          </li>
+          <li>
+            <button class="usa-accordion__button" aria-expanded="false" aria-controls="children-services">
+              Child & Adult Protective Services
+            </button>
+            <div id="children-services" class="usa-accordion__content usa-prose">
+              <h3>Child & Adult Protective Services</h3>
+
+              <div class="usa-alert usa-alert--error usa-alert--slim">
+                <div class="usa-alert__body">
+                  <p class="usa-alert__text">
+                    <strong>Emergency:</strong> To report child abuse or neglect, call <a href="tel:740-833-2340"><strong>740-833-2340</strong></a> (24/7). For adult abuse (age 60+), call <a href="tel:740-833-2340"><strong>740-833-2340</strong></a> or toll-free <a href="tel:1-855-644-6277"><strong>1-855-OHIOAPS (1-855-644-6277)</strong></a>.
+                  </p>
+                </div>
+              </div>
+
+              <h4>Child Protective Services</h4>
+              <p><strong>Mission:</strong> To ensure every child in Delaware County is in a safe and stable home. We serve youth who are, or may be at risk of abuse or neglect.</p>
+
+              <p><strong>How to Report:</strong> Call Delaware County Children Services at <a href="tel:740-833-2340">740-833-2340</a> (available 24/7).</p>
+
+              <p><strong>Response Times:</strong></p>
+              <ul>
+                <li><strong>Emergencies:</strong> Workers dispatched within 1 hour</li>
+                <li><strong>Non-emergencies:</strong> Workers dispatched within 72 hours</li>
+              </ul>
+
+              <p><strong>Confidentiality:</strong> The law protects the confidentiality of reporters. A social worker cannot reveal, confirm, or deny who a reporter may be. There are no consequences for reports made in good faith, even if unfounded.</p>
+
+              <h4>Adult Protective Services</h4>
+              <p>Adult Protective Services staff investigate reports of abuse, neglect (including self-neglect), or financial exploitation of adults age 60 and over who are unable to protect themselves due to serious physical or mental limitations.</p>
+
+              <p><strong>To Report Elder Abuse:</strong></p>
+              <ul>
+                <li>Local: <a href="tel:740-833-2340">740-833-2340</a></li>
+                <li>Statewide: <a href="tel:1-855-644-6277">1-855-OHIOAPS (1-855-644-6277)</a></li>
+                <li>Available 24/7</li>
+              </ul>
+
+              <p><strong>Types of Elder Abuse:</strong></p>
+              <ul>
+                <li>Neglect: Caretakers failing to provide food, shelter, healthcare, or protection</li>
+                <li>Self-Neglect: Elderly individuals unable or unwilling to provide necessary self-care</li>
+                <li>Exploitation: Unauthorized use or theft of an elder's funds or property</li>
+                <li>Emotional Abuse: Verbal threats, intimidation, name-calling, harassment, and isolation</li>
+                <li>Physical Abuse: Injury inflicted through hitting, kicking, or weaponry</li>
+                <li>Sexual Abuse: Nonconsensual or forced sexual contact</li>
+              </ul>
+
+              <h4>Foster Care & Adoption</h4>
+              <p><strong>Who Can Become a Foster Parent?</strong> Single or married, homeowners or renters, age 21+. Licensing with ongoing training and criminal checks required.</p>
+
+              <p><strong>Support for Foster Families:</strong></p>
+              <ul>
+                <li>Monthly stipends based on child's age</li>
+                <li>Clothing allowances</li>
+                <li>Medical cards for foster children</li>
+                <li>Counseling services and support groups</li>
+                <li>Respite care</li>
+                <li>Case management</li>
+              </ul>
+
+              <p><strong>Placement Information:</strong> Delaware County typically places no more than three foster children per home, with exceptions for sibling groups or emergencies. Placement duration ranges from overnight to approximately two years.</p>
+
+              <p><strong>Contact:</strong> <a href="tel:740-833-2300">740-833-2300</a> for foster care and adoption information.</p>
+
+              <p><strong>State Resource:</strong> <a href="https://FosterAndAdopt.jfs.ohio.gov" target="_blank" rel="noopener noreferrer">FosterAndAdopt.jfs.ohio.gov</a></p>
+
+              <h4>Safe Haven for Newborns</h4>
+              <p>Birth parents may leave an infant (up to 30 days old) with a medical worker at a hospital, emergency medical worker, or law enforcement officer without prosecution if the infant has not been abused.</p>
+
+              <a href="/child-adult-protective-services" class="usa-button">Learn More</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Support Areas -->
+    <section class="support-areas-section" aria-labelledby="support-areas-heading">
+      <div class="grid-container">
+        <h2 class="section-heading" id="support-areas-heading">Support Areas</h2>
+
+        <div class="support-grid">
+          <!-- Medicaid Card -->
+          <article class="support-card support-card--image">
+            <div class="support-card__bg-image" style="background-image: url('public/medicaid.jpg');"></div>
+            <div class="support-card__overlay"></div>
+            <div class="support-card__content">
+              <h3 class="support-card__title">Medicaid</h3>
+              <p class="support-card__description">
+                Health insurance program for low-income individuals and families, including children, seniors, individuals with disabilities, and other eligible Ohio residents.
+              </p>
+              <a href="/medicaid" class="support-card__cta" aria-label="Learn more about Medicaid">Learn more</a>
+            </div>
+          </article>
+
+          <!-- Food & Cash Assistance Card -->
+          <article class="support-card support-card--image">
+            <div class="support-card__bg-image" style="background-image: url('public/food-assistance.jpg');"></div>
+            <div class="support-card__overlay"></div>
+            <div class="support-card__content">
+              <h3 class="support-card__title">Food & Cash Assistance</h3>
+              <p class="support-card__description">
+                SNAP food assistance and Ohio Works First cash assistance are available to Delaware County residents facing challenges with living expenses.
+              </p>
+              <a href="/public-assistance" class="support-card__cta" aria-label="Learn more about Food and Cash Assistance">Learn more</a>
+            </div>
+          </article>
+
+          <!-- Child Care Card -->
+          <article class="support-card support-card--image">
+            <div class="support-card__bg-image" style="background-image: url('public/child-care.jpg');"></div>
+            <div class="support-card__overlay"></div>
+            <div class="support-card__content">
+              <h3 class="support-card__title">Child Care</h3>
+              <p class="support-card__description">
+                Child care assistance for low-income families who work or participate in training programs through Ohio's Publicly Funded Child Care (PFCC) program.
+              </p>
+              <a href="/child-care" class="support-card__cta" aria-label="Learn more about Child Care">Learn more</a>
+            </div>
+          </article>
+
+          <!-- OhioMeansJobs Card -->
+          <article class="support-card support-card--image">
+            <div class="support-card__bg-image" style="background-image: url('public/workforce.png');"></div>
+            <div class="support-card__overlay"></div>
+            <div class="support-card__content">
+              <h3 class="support-card__title">OhioMeansJobs Delaware</h3>
+              <p class="support-card__description">
+                Connect with employers, get resume help, access training programs, and find career opportunities. Services for job seekers, employers, and youth.
+              </p>
+              <a href="/ohiomeansjobs" class="support-card__cta" aria-label="Learn more about OhioMeansJobs Delaware">Learn more</a>
+            </div>
+          </article>
+
+          <!-- Child Protective Services Card -->
+          <article class="support-card support-card--image">
+            <div class="support-card__bg-image" style="background-image: url('public/child-protective.png');"></div>
+            <div class="support-card__overlay"></div>
+            <div class="support-card__content">
+              <h3 class="support-card__title">Child Protective Services</h3>
+              <p class="support-card__description">
+                Protecting children is our priority. If you suspect a child in Delaware County is being abused or neglected, call 740-833-2340 immediately (24/7).
+              </p>
+              <a href="/child-protective-services" class="support-card__cta" aria-label="Learn more about Child Protective Services">Learn more</a>
+            </div>
+          </article>
+
+          <!-- Adoption & Foster Care Card -->
+          <article class="support-card support-card--image">
+            <div class="support-card__bg-image" style="background-image: url('public/adoption.png');"></div>
+            <div class="support-card__overlay"></div>
+            <div class="support-card__content">
+              <h3 class="support-card__title">Adoption & Foster Care</h3>
+              <p class="support-card__description">
+                Interested in becoming a foster or adoptive parent? Delaware County Children Services is here to help you provide safe, stable, and nurturing homes for children in need.
+              </p>
+              <a href="/adoption-foster" class="support-card__cta" aria-label="Learn more about Adoption and Foster Care">Learn more</a>
+            </div>
+          </article>
+
+          <!-- Youth Services Card -->
+          <article class="support-card support-card--image">
+            <div class="support-card__bg-image" style="background-image: url('public/job.png');"></div>
+            <div class="support-card__overlay"></div>
+            <div class="support-card__content">
+              <h3 class="support-card__title">Youth & Young Adult Services</h3>
+              <p class="support-card__description">
+                Career coaching, financial literacy, GED prep, and work experience for youth ages 14-24. Build your career path and achieve self-reliance.
+              </p>
+              <a href="/youth-services" class="support-card__cta" aria-label="Learn more about Youth & Young Adult Services">Learn more</a>
+            </div>
+          </article>
+
+          <!-- Job Postings Card -->
+          <article class="support-card support-card--image">
+            <div class="support-card__bg-image" style="background-image: url('public/job.png');"></div>
+            <div class="support-card__overlay"></div>
+            <div class="support-card__content">
+              <h3 class="support-card__title">Job Postings</h3>
+              <p class="support-card__description">
+                Current job openings at Delaware County JFS. Join our team of over 70 professionals committed to serving families and individuals in our community.
+              </p>
+              <a href="/jobs" class="support-card__cta" aria-label="View job openings at Delaware County JFS">View Openings</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Overview Callout -->
+    <section class="services-callout" aria-label="Our mission and commitment">
+      <div class="grid-container">
+        <div class="services-callout__content">
+          <div class="services-callout__icon">
+            <i class="fas fa-hands-helping" aria-hidden="true"></i>
+          </div>
+          <p class="services-callout__text">
+            Delaware County Job and Family Services provides a holistic approach to assist families and individuals facing challenges with living expenses, healthcare, family support, job skills, and employment. We are committed to serving residents with dignity, respect, and compassion through public assistance, child and adult protective services, foster care and adoption, and comprehensive workforce development programs. With over 70 dedicated team members, we help Delaware County residents achieve self-sufficiency and build stronger futures.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- News & Contact Section -->
+    <section class="news-section" aria-labelledby="news-section-heading">
+      <div class="grid-container">
+        <h2 class="sr-only" id="news-section-heading">News and Contact Information</h2>
+        <div class="news-grid">
+          <!-- Latest Updates Column -->
+          <div class="news-articles">
+            <h3 class="section-heading">Latest Updates</h3>
+
+            <article class="news-article">
+              <div class="news-article__image">
+                <i class="fas fa-file-alt" aria-hidden="true"></i>
+              </div>
+              <div class="news-article__content">
+                <h4 class="news-article__title">
+                  <a href="/news/youth-services-program">Delaware County JFS Announces New Youth Services Program</a>
+                </h4>
+                <time class="news-article__date" datetime="2025-11-12">November 12, 2025</time>
+              </div>
+            </article>
+
+            <article class="news-article">
+              <div class="news-article__image">
+                <i class="fas fa-file-alt" aria-hidden="true"></i>
+              </div>
+              <div class="news-article__content">
+                <h4 class="news-article__title">
+                  <a href="/news/social-worker-opening">Job Opening: Social Worker - Children Services Division</a>
+                </h4>
+                <time class="news-article__date" datetime="2025-11-10">November 10, 2025</time>
+              </div>
+            </article>
+
+            <article class="news-article">
+              <div class="news-article__image">
+                <i class="fas fa-file-alt" aria-hidden="true"></i>
+              </div>
+              <div class="news-article__content">
+                <h4 class="news-article__title">
+                  <a href="/news/medicaid-hours">Updated Office Hours for Medicaid Applications</a>
+                </h4>
+                <time class="news-article__date" datetime="2025-11-05">November 5, 2025</time>
+              </div>
+            </article>
+
+            <article class="news-article">
+              <div class="news-article__image">
+                <i class="fas fa-file-alt" aria-hidden="true"></i>
+              </div>
+              <div class="news-article__content">
+                <h4 class="news-article__title">
+                  <a href="/news/foster-parent-session">Foster Parent Information Session - Register Now</a>
+                </h4>
+                <time class="news-article__date" datetime="2025-11-01">November 1, 2025</time>
+              </div>
+            </article>
+
+            <a href="/news" class="news-articles__view-all">View All News <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+
+          <!-- Contact Us Column -->
+          <div class="news-facebook">
+            <h3 class="section-heading">Contact Us</h3>
+            <div class="contact-cards-grid">
+              <!-- Director Card -->
+              <div class="contact-card">
+                <div class="contact-card__icon">
+                  <i class="fas fa-user-tie" aria-hidden="true"></i>
+                </div>
+                <div class="contact-card__content">
+                  <h4 class="contact-card__title">Director</h4>
+                  <p class="contact-card__text">
+                    Bob Anderson
+                  </p>
+                </div>
+              </div>
+
+              <!-- Hours Card -->
+              <div class="contact-card">
+                <div class="contact-card__icon">
+                  <i class="far fa-clock" aria-hidden="true"></i>
+                </div>
+                <div class="contact-card__content">
+                  <h4 class="contact-card__title">Office Hours</h4>
+                  <p class="contact-card__text">
+                    <strong>Mon-Fri:</strong> 8:00 AM – 4:00 PM<br>
+                    <strong>Medicaid:</strong> 8:00 AM – 11:00 AM
+                  </p>
+                </div>
+              </div>
+
+              <!-- Address Card -->
+              <div class="contact-card">
+                <div class="contact-card__icon">
+                  <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                </div>
+                <div class="contact-card__content">
+                  <h4 class="contact-card__title">Address</h4>
+                  <p class="contact-card__text">
+                    145 North Union Street, 2nd Floor<br>
+                    Delaware, Ohio 43015
+                  </p>
+                </div>
+              </div>
+
+              <!-- Phone Card -->
+              <div class="contact-card">
+                <div class="contact-card__icon">
+                  <i class="fas fa-phone" aria-hidden="true"></i>
+                </div>
+                <div class="contact-card__content">
+                  <h4 class="contact-card__title">Phone</h4>
+                  <p class="contact-card__text">
+                    <a href="tel:740-833-2300">740-833-2300</a><br>
+                    <span style="font-size: 0.9em;">Toll Free: <a href="tel:1-800-899-3180">800-899-3180</a></span>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Email Card -->
+              <div class="contact-card">
+                <div class="contact-card__icon">
+                  <i class="fas fa-envelope" aria-hidden="true"></i>
+                </div>
+                <div class="contact-card__content">
+                  <h4 class="contact-card__title">Email</h4>
+                  <p class="contact-card__text">
+                    <a href="mailto:delawarecounty@jfs.ohio.gov">delawarecounty@jfs.ohio.gov</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" aria-label="Footer">
+    <div class="site-footer__main">
+      <div class="grid-container">
+        <div class="site-footer__grid">
+          <div class="site-footer__brand">
+            <p>We provide Delaware County residents with a holistic approach to assistance with living expenses, healthcare, family support, job skills, and employment through public assistance, child and adult protective services, and workforce development.</p>
+            <div class="site-footer__social" aria-label="Follow Delaware County JFS">
+              <a href="https://www.facebook.com/DelawareCountyJFS/" class="site-footer__social-link" aria-label="Facebook">
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.linkedin.com/" class="site-footer__social-link" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.youtube.com/" class="site-footer__social-link" aria-label="YouTube">
+                <i class="fab fa-youtube" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <nav class="site-footer__column" aria-label="About JFS">
+            <h2 class="site-footer__heading">About JFS</h2>
+            <ul class="site-footer__list">
+              <li><a href="/about">About the Department</a></li>
+              <li><a href="/leadership">Leadership Team</a></li>
+              <li><a href="/jobs">Job Postings</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </nav>
+
+          <nav class="site-footer__column" aria-label="Quick Links">
+            <h2 class="site-footer__heading">Quick Links</h2>
+            <ul class="site-footer__list">
+              <li><a href="/public-assistance">Public Assistance</a></li>
+              <li><a href="/workforce-services">Workforce Services</a></li>
+              <li><a href="/ohiomeansjobs">OhioMeansJobs</a></li>
+              <li><a href="/child-adult-protective-services">Child & Adult Protective Services</a></li>
+              <li><a href="/prevention-retention-contingency">PRC</a></li>
+              <li><a href="/fcfc">Family & Children First Council</a></li>
+            </ul>
+          </nav>
+
+          <div class="site-footer__column">
+            <h2 class="site-footer__heading">Contact Details</h2>
+            <ul class="site-footer__contact-list">
+              <li>
+                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                <span>145 North Union Street, 2nd Floor<br>Delaware, Ohio 43015</span>
+              </li>
+              <li>
+                <i class="fas fa-phone" aria-hidden="true"></i>
+                <a href="tel:740-833-2300">740-833-2300</a>
+              </li>
+              <li>
+                <i class="fas fa-phone" aria-hidden="true"></i>
+                <span>Toll Free: <a href="tel:1-800-899-3180">800-899-3180</a></span>
+              </li>
+              <li>
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+                <a href="mailto:delawarecounty@jfs.ohio.gov">delawarecounty@jfs.ohio.gov</a>
+              </li>
+              <li>
+                <i class="far fa-clock" aria-hidden="true"></i>
+                <span>Mon – Fri, 8:00 AM – 4:00 PM<br>Medicaid applications: 8:00 AM – 11:00 AM</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom">
+      <div class="grid-container">
+        <div class="site-footer__bottom-inner">
+          <p>© <span id="footerYear"></span> Delaware County Department of Job & Family Services. All rights reserved.</p>
+          <div class="site-footer__policies">
+            <a href="/accessibility">Accessibility</a>
+            <a href="/privacy">Privacy</a>
+            <a href="/sitemap">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Keep footer year current without additional dependencies
+    (function () {
+      var footerYear = document.getElementById('footerYear');
+      if (footerYear) {
+        footerYear.textContent = new Date().getFullYear();
+      }
+    })();
+  </script>
+
+  <!-- USWDS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.7.1/dist/js/uswds-init.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.7.1/dist/js/uswds.min.js"></script>
+
+  <!-- Header Navigation JavaScript -->
+  <script>
+    (function() {
+      // Mobile menu toggle
+      const mobileToggle = document.getElementById('mobileMenuToggle');
+      const mainNav = document.getElementById('mainNav');
+
+      if (mobileToggle && mainNav) {
+        mobileToggle.addEventListener('click', function() {
+          const isOpen = mainNav.classList.contains('open');
+          mainNav.classList.toggle('open');
+          mobileToggle.setAttribute('aria-expanded', !isOpen);
+        });
+      }
+
+      // Dropdown toggles
+      const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+
+      // Function to close all dropdowns
+      function closeAllDropdowns() {
+        dropdownToggles.forEach(toggle => {
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      }
+
+      // Function to get dropdown menu items
+      function getDropdownItems(toggle) {
+        const parent = toggle.closest('.has-dropdown');
+        if (!parent) return [];
+        const menu = parent.querySelector('.dropdown-menu');
+        if (!menu) return [];
+        return Array.from(menu.querySelectorAll('a'));
+      }
+
+      // Click handler for dropdowns
+      dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', function(e) {
+          e.preventDefault();
+          const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+          // Close all other dropdowns
+          dropdownToggles.forEach(t => {
+            if (t !== this) {
+              t.setAttribute('aria-expanded', 'false');
+            }
+          });
+
+          // Toggle this dropdown
+          this.setAttribute('aria-expanded', !isExpanded);
+
+          // If opening, focus first menu item
+          if (!isExpanded) {
+            const items = getDropdownItems(this);
+            if (items.length > 0) {
+              setTimeout(() => items[0].focus(), 50);
+            }
+          }
+        });
+
+        // Keyboard navigation for dropdown toggles
+        toggle.addEventListener('keydown', function(e) {
+          const isExpanded = this.getAttribute('aria-expanded') === 'true';
+          const items = getDropdownItems(this);
+
+          if (e.key === 'Escape' && isExpanded) {
+            // Close dropdown and return focus to toggle
+            e.preventDefault();
+            this.setAttribute('aria-expanded', 'false');
+            this.focus();
+          } else if (e.key === 'ArrowDown' && isExpanded) {
+            // Navigate to first item in dropdown
+            e.preventDefault();
+            if (items.length > 0) {
+              items[0].focus();
+            }
+          } else if (e.key === 'ArrowUp' && isExpanded) {
+            // Navigate to last item in dropdown
+            e.preventDefault();
+            if (items.length > 0) {
+              items[items.length - 1].focus();
+            }
+          }
+        });
+      });
+
+      // Keyboard navigation within dropdown menus
+      document.querySelectorAll('.dropdown-menu a').forEach(link => {
+        link.addEventListener('keydown', function(e) {
+          const parent = this.closest('.has-dropdown');
+          if (!parent) return;
+
+          const toggle = parent.querySelector('.dropdown-toggle');
+          const items = getDropdownItems(toggle);
+          const currentIndex = items.indexOf(this);
+
+          if (e.key === 'Escape') {
+            // Close dropdown and return focus to toggle
+            e.preventDefault();
+            if (toggle) {
+              toggle.setAttribute('aria-expanded', 'false');
+              toggle.focus();
+            }
+          } else if (e.key === 'ArrowDown') {
+            // Navigate to next item (or first if at end)
+            e.preventDefault();
+            const nextIndex = (currentIndex + 1) % items.length;
+            items[nextIndex].focus();
+          } else if (e.key === 'ArrowUp') {
+            // Navigate to previous item (or last if at beginning)
+            e.preventDefault();
+            const prevIndex = currentIndex === 0 ? items.length - 1 : currentIndex - 1;
+            items[prevIndex].focus();
+          } else if (e.key === 'Home') {
+            // Jump to first item
+            e.preventDefault();
+            items[0].focus();
+          } else if (e.key === 'End') {
+            // Jump to last item
+            e.preventDefault();
+            items[items.length - 1].focus();
+          } else if (e.key === 'Tab') {
+            // Close dropdown when tabbing away
+            if (toggle) {
+              toggle.setAttribute('aria-expanded', 'false');
+            }
+          }
+        });
+      });
+
+      // Close dropdowns when clicking outside
+      document.addEventListener('click', function(e) {
+        if (!e.target.closest('.has-dropdown')) {
+          closeAllDropdowns();
+        }
+      });
+
+      // Close dropdowns on Escape key (global handler)
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          closeAllDropdowns();
+        }
+      });
+    })();
+  </script>
+
+  <!-- Consistent Help Link (WCAG 2.2 - 3.2.6) -->
+  <a href="/contact" class="consistent-help-link" aria-label="Contact us for help">
+    <i class="fas fa-phone" aria-hidden="true"></i> Need Help?
+  </a>
+
+  <!-- Keyboard Navigation Detection (Enhanced Focus Indicators) -->
+  <script>
+    (function() {
+      // Detect when user is using keyboard for navigation
+      function handleFirstTab(e) {
+        if (e.keyCode === 9) {
+          document.body.classList.add('user-is-tabbing');
+          window.removeEventListener('keydown', handleFirstTab);
+          window.addEventListener('mousedown', handleMouseDownOnce);
+        }
+      }
+
+      function handleMouseDownOnce() {
+        document.body.classList.remove('user-is-tabbing');
+        window.removeEventListener('mousedown', handleMouseDownOnce);
+        window.addEventListener('keydown', handleFirstTab);
+      }
+
+      window.addEventListener('keydown', handleFirstTab);
+
+      // Improve chat widget accessibility
+      const chatWidget = document.getElementById('chatWidget');
+      const openChatButton = document.getElementById('openChatButton');
+      const closeChatButton = document.getElementById('closeChatButton');
+
+      function updateChatAriaStates(isOpen) {
+        if (chatWidget) {
+          chatWidget.setAttribute('aria-hidden', !isOpen);
+          chatWidget.setAttribute('aria-modal', isOpen);
+        }
+        if (openChatButton) {
+          openChatButton.setAttribute('aria-expanded', isOpen);
+        }
+      }
+
+      // Update initial state
+      updateChatAriaStates(false);
+
+      // Listen for chat open/close events
+      if (openChatButton) {
+        openChatButton.addEventListener('click', function() {
+          updateChatAriaStates(true);
+        });
+      }
+
+      if (closeChatButton) {
+        closeChatButton.addEventListener('click', function() {
+          updateChatAriaStates(false);
+        });
+      }
+
+      // Trap focus in chat widget when open
+      if (chatWidget) {
+        chatWidget.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape' && !chatWidget.getAttribute('aria-hidden')) {
+            if (closeChatButton) closeChatButton.click();
+          }
+
+          // Focus trap
+          if (e.key === 'Tab' && !chatWidget.getAttribute('aria-hidden')) {
+            const focusableElements = chatWidget.querySelectorAll(
+              'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+            );
+            const firstFocusable = focusableElements[0];
+            const lastFocusable = focusableElements[focusableElements.length - 1];
+
+            if (e.shiftKey) {
+              if (document.activeElement === firstFocusable) {
+                lastFocusable.focus();
+                e.preventDefault();
+              }
+            } else {
+              if (document.activeElement === lastFocusable) {
+                firstFocusable.focus();
+                e.preventDefault();
+              }
+            }
+          }
+        });
+      }
+
+      // Announce status messages for screen readers
+      function announceMessage(message, priority = 'polite') {
+        const announcement = document.createElement('div');
+        announcement.setAttribute('role', 'status');
+        announcement.setAttribute('aria-live', priority);
+        announcement.setAttribute('aria-atomic', 'true');
+        announcement.className = 'sr-only';
+        announcement.textContent = message;
+        document.body.appendChild(announcement);
+
+        setTimeout(() => {
+          document.body.removeChild(announcement);
+        }, 1000);
+      }
+
+      // Add announcement when accordions expand
+      const accordionButtons = document.querySelectorAll('.usa-accordion__button');
+      accordionButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const isExpanded = this.getAttribute('aria-expanded') === 'true';
+          const sectionName = this.textContent.trim();
+          if (!isExpanded) {
+            setTimeout(() => {
+              announceMessage(sectionName + ' section expanded');
+            }, 100);
+          }
+        });
+      });
+    })();
+  </script>
+
+  <!-- Performance and Accessibility Monitoring -->
+  <script>
+    // Log accessibility issues in development
+    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+      // Check for images without alt text
+      const imagesWithoutAlt = document.querySelectorAll('img:not([alt])');
+      if (imagesWithoutAlt.length > 0) {
+        console.warn('Accessibility Issue: Found', imagesWithoutAlt.length, 'images without alt text');
+      }
+
+      // Check for links without text content
+      const linksWithoutText = Array.from(document.querySelectorAll('a')).filter(
+        link => !link.textContent.trim() && !link.getAttribute('aria-label')
+      );
+      if (linksWithoutText.length > 0) {
+        console.warn('Accessibility Issue: Found', linksWithoutText.length, 'links without text or aria-label');
+      }
+
+      // Check for buttons without accessible names
+      const buttonsWithoutNames = Array.from(document.querySelectorAll('button')).filter(
+        button => !button.textContent.trim() && !button.getAttribute('aria-label')
+      );
+      if (buttonsWithoutNames.length > 0) {
+        console.warn('Accessibility Issue: Found', buttonsWithoutNames.length, 'buttons without accessible names');
+      }
+    }
+  </script>
+
+</body>
+</html>
